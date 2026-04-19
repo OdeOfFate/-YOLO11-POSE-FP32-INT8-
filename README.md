@@ -7,7 +7,7 @@ https://www.intel.cn/content/www/cn/zh/developer/tools/openvino-toolkit/download
 pip install -U ultralytics
 4.在你的新安装的环境当中运行以下命令以量化模型
 yolo export model=path\to\best.pt format=openvino int8=True imgsz=640 data=path\to\maps.yaml
-# 务必指定具体的 imgsz，并关闭 dynamic
+#务必指定具体的 imgsz，并关闭 dynamic
 yolo export model=best.pt format=openvino int8=True imgsz=640 data=path\to\maps.yaml dynamic=False
 
 转成FP16格式：
